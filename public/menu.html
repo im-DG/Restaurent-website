@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Brother's Cafe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstraps -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		#scrollUpBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: #02141be5;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<!-- Scroll button -->
+	<button onclick="topFunction()" id="scrollUpBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+	<div class="py-1 bg-black top">
+		<div class="container">
+			<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+				<div class="col-lg-12 d-block">
+					<div class="row d-flex">
+						<div class="col-md pr-4 d-flex topper align-items-center">
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+									class="fa fa-phone"></span></div>
+							<span class="text">+91 8264701370</span>
+						</div>
+						<div class="col-md pr-4 d-flex topper align-items-center">
+							<div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+									class="fa fa-paper-plane"></span></div>
+							<span class="text">brotherscafe39@gmail.com</span>
+						</div>
+						<div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+							<p class="mb-0 register-link"><span>Open:</span> <span>Monday - Sunday</span>
+								<span>8:00AM - 10:00PM</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Brother's Cafe</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item "><a href="dashbord.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+					<li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+					<li class="nav-item "><a href="reservation.html" class="nav-link">Book a table</a></li>
+				</ul>
+				<div class="d-flex mx-4 my-1">
+					<button type="button" class="btn btn-primary rounded-3 me-3" data-bs-toggle="modal"
+						data-bs-target="#exampleModal">
+						<i class="fa fa-cart-plus" style="font-size: 20px;" aria-hidden="true"></i>
+					</button>
+					<input type="button" class="btn btn-primary me-2 rounded-3" id="btnLogout" value="Logout">
+					<!-- <input type="button" class="btn btn-primary me-3 rounded-3" id="btnShowLog" value="Sign In"
+						data-bs-toggle="modal" data-bs-target="#loginModal">
+					<input type="button" class="btn btn-primary rounded-3" id="btnShowSign" value="Register"
+						data-bs-toggle="modal" data-bs-target="#signupModal"> -->
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('./pic/s1.jpg');"
+		data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate text-center mb-4">
+					<h1 class="mb-2 bread">Specialties</h1>
+					<p class="breadcrumbs"><span class="mr-2"><a href="dashbord.html">Home <i
+									class="fa fa-chevron-right"></i></a></span> <span>Menu <i
+								class="fa fa-chevron-right"></i></span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="ftco-search">
+				<div class="row">
+					<div class="col-md-12 nav-link-wrap">
+						<div class="nav nav-pills d-flex text-center" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill"
+								href="#v-pills-1" role="tab" aria-controls="v-pills-1"
+								aria-selected="true">Breakfast</a>
+
+							<a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2"
+								role="tab" aria-controls="v-pills-2" aria-selected="false">Lunch</a>
+
+							<a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"
+								role="tab" aria-controls="v-pills-3" aria-selected="false">Dinner</a>
+
+							<a class="nav-link ftco-animate" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4"
+								role="tab" aria-controls="v-pills-4" aria-selected="false">Drinks</a>
+
+							<a class="nav-link ftco-animate" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5"
+								role="tab" aria-controls="v-pills-5" aria-selected="false">Desserts</a>
+
+							<a class="nav-link ftco-animate" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-6"
+								role="tab" aria-controls="v-pills-6" aria-selected="false">Coffee</a>
+
+
+						</div>
+					</div>
+					<div class="col-md-12 tab-wrap">
+
+						<div class="tab-content" id="v-pills-tabContent">
+
+							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+								aria-labelledby="day-1-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/breakfast-1.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Chilli Paneer</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">290</span>
+														</div>
+													</div>
+													<p><span>Paneer</span>, <span>Onion</span>, <span>Ginger</span>,
+														<span>Green bell Peppers</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 1, name: 'Product Name', price: 290.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/breakfast-2.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Halloumi Salad</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">290</span>
+														</div>
+													</div>
+													<p><span>Grilled halloumi cheese</span>, <span>Fresh Veggies</span>,
+														<span>Toasted pine nuts</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 2, name: 'Grilled Halloumi Salad', price: 290.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/breakfast-3.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Chocolate Banana Oats</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">160</span>
+														</div>
+													</div>
+													<p><span>Basmati rice</span>, <span>Coconut cream</span>, <span>Raw
+															cacao</span>,
+														<span>Dried fruits</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 3, name: 'Chocolate Banana Oats', price: 160.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/breakfast-4.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Poached Eggs</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">150</span>
+														</div>
+													</div>
+													<p><span>Eggs</span>, <span>Dark Chocolate</span>,
+														<span>Grains</span>,
+														<span>Carrots</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 4, name: 'Poached Eggs', price: 150.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/breakfast-5.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Meat potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">180</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Besan</span>,
+														<span>Onion</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 5, name: 'Grilled Meat potatoes', price: 180.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/breakfast-6.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Poached eggs rye bread</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">290</span>
+														</div>
+													</div>
+													<p><span>Egg</span>, <span>Avocado</span>, <span>Tomato</span>,
+														<span>Rye bread</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 6, name: 'Poached eggs rye bread', price: 290.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/breakfast-7.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Salmon Fish Fry</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">160</span>
+														</div>
+													</div>
+													<p><span>Lemon</span>, <span>Salmon Fish</span>, <span>Curry
+															Leaves</span>,
+														<span>Chili Powder</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 7, name: 'Salmon Fish Fry', price: 160.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/breakfast-8.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Oatmeal with Fresh Fruit</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">280</span>
+														</div>
+													</div>
+													<p><span>Rolled oats</span>, <span>Milk</span>, <span>Sliced
+															strawberries</span>,
+														<span>Chopped Pineapple</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 8, name: 'Oatmeal with Fresh Fruit', price: 280.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="v-pills-2" role="tabpanel"
+								aria-labelledby="v-pills-day-2-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/lunch-1.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Soy Glazed Baked Salmon</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">175</span>
+														</div>
+													</div>
+													<p><span>Asparagus</span>, <span>Salmon Fish</span>,
+														<span>Onions</span>,
+														<span>Bell Peppers</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 9, name: 'Soy Glazed Baked Salmon', price: 175.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/lunch-2.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">320</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 10, name: 'Grilled Beef with potatoes', price: 320.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/lunch-3.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">250</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 11, name: 'Grilled Beef with potatoes', price: 250.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/lunch-4.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">210</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 12, name: 'Grilled Beef with potatoes', price: 210.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/lunch-5.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">360</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 13, name: 'Grilled Beef with potatoes', price: 360.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/lunch-6.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">650</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 14, name: 'Grilled Beef with potatoes', price: 650.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/lunch-7.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">250</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 15, name: 'Grilled Beef with potatoes', price: 250.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/lunch-8.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">90</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 16, name: 'Grilled Beef with potatoes', price: 90.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="v-pills-3" role="tabpanel"
+								aria-labelledby="v-pills-day-3-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dinner-1.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">310</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 17, name: 'Grilled Beef with potatoes', price: 310.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dinner-2.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">205</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 18, name: 'Grilled Beef with potatoes', price: 205.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/dinner-3.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">290</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 19, name: 'Grilled Beef with potatoes', price: 290.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/dinner-4.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">129</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 20, name: 'Grilled Beef with potatoes', price: 129.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dinner-5.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">29</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 21, name: 'Grilled Beef with potatoes', price: 29.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dinner-6.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">559</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 22, name: 'Grilled Beef with potatoes', price: 559.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="v-pills-4" role="tabpanel"
+								aria-labelledby="v-pills-day-4-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/drink-1.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Strawberry Mint Mojito</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">60</span>
+														</div>
+													</div>
+													<p><span>Strawberries</span>, <span> Lime slices</span>,
+														<span>Leaves Fresh Mint</span>,
+														<span>Ice</span>,<span>Club Soda</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 23, name: 'Strawberry Mint Mojito', price: 60.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/drink-2.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Lemon Mojito</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">50</span>
+														</div>
+													</div>
+													<p><span>Lemon</span>, <span>Salt </span>, <span> Club soda</span>,
+														<span>Sugar</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 24, name: 'Lemon Mojito', price: 50.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/drink-3.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Orange Juice</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">40</span>
+														</div>
+													</div>
+													<p><span>Orange</span>, <span>Sugars</span>,
+														<span>Ice</span>,<span>Ice Orange Juice</span>
+
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 25, name: 'Orange Juice', price: 40.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/drink-4.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Apple Beer</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">210</span>
+														</div>
+													</div>
+													<p><span>Purified carbonated water</span>, <span>Sugar</span>,
+														<span>Natural flavors</span>,
+														<span>Ice</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 26, name: 'Apple Beer', price: 210.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/drink-5.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Gin Basil Smash</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">130</span>
+														</div>
+													</div>
+													<p><span>Ice Cubes</span>, <span>Gin</span>, <span>Lemon
+															Juice</span>,
+														<span>Leaves Basil</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 27, name: 'Gin Basil Smash', price: 130.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/drink-6.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Iced Rose Petal Tea Recipe</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">320</span>
+														</div>
+													</div>
+													<p><span>Water</span>, <span>Fresh lemon juice</span>, <span>Tea
+															bags, quality black or green tea</span>,
+														<span>Sugar</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 28, name: 'Iced Rose Petal Tea Recipe', price: 320.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="v-pills-5" role="tabpanel"
+								aria-labelledby="v-pills-day-5-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dessert-1.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3> Banana Oats Pancake </h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">180</span>
+														</div>
+													</div>
+													<p><span>Gluten-free rolled oats</span>, <span>Almond milk</span>,
+														<span>Jaggery syrup</span>,
+														<span>Banana</span>,<span>Vanilla extract</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 29, name: ' Banana Oats Pancake', price: 180.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dessert-2.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Strawberry Eton Mess </h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">250</span>
+														</div>
+													</div>
+													<p><span>Strawberries</span>, <span>Raspberry vinegar</span>,
+														<span>Sugar</span>,
+														<span>Cream</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 30, name: 'Strawberry Eton Mess', price: 250.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/dessert-3.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>CaramelLava Cakes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">250</span>
+														</div>
+													</div>
+													<p><span>Baking powder</span>, <span> Sugar</span>, <span>Vanilla
+															extract</span>,
+														<span>Kosher salt</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 31, name: 'CaramelLava Cakes', price: 250.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/dessert-4.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Ice cream cone</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">60</span>
+														</div>
+													</div>
+													<p><span>Chocolate</span>, <span>Strawberry</span>, <span>Butter
+															Scotch</span>,
+														<span>Vanilla</span>
+													</p>
+													<p><button href="#" class="btn btn-primary"
+															onclick="addToCart({ id: 32, name: 'Ice cream cone', price: 60.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(images/dessert-5.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Ice cream with Strawberry</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">200</span>
+														</div>
+													</div>
+													<p><span>Ice cream</span>, <span>Strawberry</span>,
+														<span>Chocolate</span>,
+														<span> </span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 33, name: 'Ice cream with Strawberry', price: 200.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img" style="background-image: url(./pic/9.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Raspberry ice-cream cake</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">550</span>
+														</div>
+													</div>
+													<p><span>Cake</span>, <span>Raspberries</span>, <span>Vanilla ice
+															cream</span>,
+														<span>Confectioners' sugar</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 34, name: 'Raspberry ice-cream cake', price: 550.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane fade" id="v-pills-6" role="tabpanel"
+								aria-labelledby="v-pills-day-6-tab">
+								<div class="row no-gutters d-flex align-items-stretch">
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(./pic/hot-cappuccino.png);">
+											</div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Cappuccino</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">450</span>
+														</div>
+													</div>
+													<p><span>Espresso</span>, <span>Steamed milk</span>,
+														<span>Sugar</span>,
+														<span> </span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 35, name: 'Cappuccino', price: 450.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(./pic/hot-americano.png);">
+											</div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Hot-americano</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">130</span>
+														</div>
+													</div>
+													<p><span>Espresso coffee beans</span>, <span>Hot or almost boiling
+															water</span>, <span>Sugar</span>,
+														<!-- <span>Tomatoe</span> -->
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 36, name: 'Hot-americano', price: 130.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(./pic/hot-latte.png);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Hot-latte</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">180</span>
+														</div>
+													</div>
+													<p><span>Milk</span>, <span>Roast espresso coffee</span>,
+														<span>Sugar</span>,
+														<!-- <span>Tomatoe</span> -->
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 37, name: 'Hot-latte ', price: 180.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(./pic/iced-cappuccino.png);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Iced Cappuccino</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">290</span>
+														</div>
+													</div>
+													<p><span>Doubleshot espresso </span>, <span>Milk</span>, <span>
+															Maple syrup</span>,
+														<span>Sugar</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 38, name: 'Iced Cappuccino', price: 290.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img"
+												style="background-image: url(./pic/iced-espresso.png);">
+											</div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Iced Espresso</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">220</span>
+														</div>
+													</div>
+													<p><span>Espresso Shots</span>, <span>Ice</span>, <span>Milk</span>,
+														<span>Sugar</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 40, name: 'Iced Espresso', price: 220.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img" style="background-image: url(images/wine-6.jpg);">
+											</div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">$29</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 41, name: 'Grilled Beef with potatoes', price: 20.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/wine-7.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">$29</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 42, name: 'Product Name', price: 20.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+										<div class="menus d-sm-flex ftco-animate align-items-stretch">
+											<div class="menu-img img order-md-last"
+												style="background-image: url(images/wine-8.jpg);"></div>
+											<div class="text d-flex align-items-center">
+												<div>
+													<div class="d-flex">
+														<div class="one-half">
+															<h3>Grilled Beef with potatoes</h3>
+														</div>
+														<div class="one-forth">
+															<span class="price">$29</span>
+														</div>
+													</div>
+													<p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>,
+														<span>Tomatoe</span>
+													</p>
+													<p><button class="btn btn-primary"
+															onclick="addToCart({ id: 43, name: 'Product Name', price: 20.00 })">Add To Cart</button></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-6 col-lg-4">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Brother's Cafe</h2>
+						<p>Our family at Brother's cafe has been providing the best coffee and food in the city sincein
+							2020. His
+							patented coffee beans are crafted to have the perfect ingredients, texture, and flavor and
+							aslo provide a
+							good qulity food.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+							<li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Open Hours</h2>
+						<ul class="list-unstyled open-hours">
+							<li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+							<li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+							<li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+							<li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+							<li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+							<li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+							<li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Meet Developer</h2>
+						<p>Satnam Singh <span style="font-size: 12px;">(Jr. Software Developer)</span></p>
+						<div class="blog-entry">
+							<!-- <a href="blog-single.html" class="block-20" style="background-image: url('./pic/services.jpg');"> -->
+							<!-- <a href="#" class="block-20" style="background-image: url('./pic/services.jpg');">
+						</a> -->
+							<img class="card-img" src="./pic/ss2.jpg" alt="">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						Copyright &copy 2023
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+
+	<!--login model -->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content"
+				style=" background : #c8a97e;; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel"
+						style="text-align: center; font-weight: bold; color: white;">Sign in to Brother's Cafe</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="email" class="txtEmailLog form-control" id="inputEmail"
+								aria-describedby="emailHelp" style="background: none;">
+							<!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+						</div>
+						<div class="pswd mb-3">
+							<label for="exampleInputPassword1" class="form-label">Password</label>
+							<input type="password" class="txtPswdLog pswd form-control" id="inputPassword"
+								style="background: none; color: red;">
+						</div>
+						<input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal" value="Close">
+						<input type="button" class="btn btn-light rounded-3 " value="Login">
+						<!-- <input type="button" class="btn1 rounded-3 px-3 py-2 modal" value="Login" id="btnLogin">
+                <input type="button" type="button" class="close btn1 rounded-3 px-3 py-2" data-bs-dismiss="modal"
+                  aria-label="Close" value="close"> -->
+						<p id="loginResult" style="text-align: center;"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- signup model -->
+
+	<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content"
+				style=" background : #c8a97e; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel"
+						style="text-align: center; font-weight: bold; color: white;">Register to Brother's Cafe</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="signup-process" method="post">
+						<div class="mb-3">
+							<label for="txtEmail" class="form-label">Email</label>
+							<input type="email" name="txtEmail" class="txtEmailSign form-control" id="txtEmail"
+								aria-describedby="emailHelp" style="background: none;">
+							<p id="inputRes" style="font-size:14px; margin-left: 10px;"></p>
+						</div>
+						<div class="mb-3">
+							<label for="txtUsername" class="form-label">User Name</label>
+							<input type="email" name="txtEmail" class="txtUserSign form-control" id="txtUsername"
+								aria-describedby="emailHelp" style="background: none;">
+							<p id="inputRes" style="font-size:14px; margin-left: 10px;"></p>
+						</div>
+						<div class="pswd mb-3">
+							<label for="txtPswd" class="form-label">Password</label>
+							<input type="password" name="txtPswd" class="txtPswdSign pswd form-control" id="txtPswd"
+								style="background: none;">
+						</div>
+						<input type="button" class="btn btn-light rounded-3" value="Sign Up" id="btnSignup">
+						<input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal"
+							aria-label="Close" value="close">
+						<p class="mt-2 text-center" id="submitRes" style="margin-left: 10px;"></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--cardt model-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content"
+				style=" background : #c8a97e;; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+				<div class="modal-header text-light">
+					<h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Add to Cart</h1>
+					<button type="button" class="btn-close text-light" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<table>
+						<thead>
+							<tr style="margin-left: 20px;">
+								<th>Product</th>
+								<th>Price</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody id="cart-items">
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2">Total:</td>
+								<td id="cart-total"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary rounded-3">Payment</button> -->
+					<input type="button" class="btn btn-light rounded-3" value="Payment" id="btnSignup">
+					<input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal" aria-label="Close"
+						value="close">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- JS file links -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script src="./js/scrollupbtn.js"></script>
+	<script src="js/dashbord.js"></script>
+	<script src="js/newcart.js"></script>
+
+</body>
+
+</html>

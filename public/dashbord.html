@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Brother's Cafe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<!-- Bootstraps -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<!-- Animations on Scroll -->
+<link rel="stylesheet" href="css/aos.css">
+
+<link rel="stylesheet" href="css/ionicons.min.css">
+
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+  #scrollUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #02141be5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+
+<body>
+  <!-- Scroll button -->
+  <button onclick="topFunction()" id="scrollUpBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+  <div class="py-1 bg-black top">
+    <div class="container">
+      <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+        <div class="col-lg-12 d-block">
+          <div class="row d-flex">
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="fa fa-phone"></span>
+              </div>
+              <span class="text">+91 8264701370</span>
+            </div>
+            <div class="col-md pr-4 d-flex topper align-items-center">
+              <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+                  class="fa fa-paper-plane"></span></div>
+              <span class="text">brotherscafe39@gmail.com</span>
+            </div>
+            <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right justify-content-end">
+              <p class="mb-0 register-link"><span>Open :</span> <span>Monday - Sunday</span> <span>8:00AM -
+                  10:00PM</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Brother's Cafe</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="dashbord.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Stories</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item "><a href="reservation.html" class="nav-link">Book a table</a></li>
+        </ul>
+        <div class="d-flex mx-4 my-1">
+          <button type="button" class="btn btn-primary rounded-3 me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="fa fa-cart-plus" style="font-size: 20px;" aria-hidden="true"></i>
+					</button>
+          <input type="button" class="btn btn-primary me-2 rounded-3" id="btnLogout" value="Logout">
+          <!-- <input type="button" class="btn btn-primary rounded-3" id="btnShowSign" value="Register"
+            data-bs-toggle="modal" data-bs-target="#signupModal"> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="home-slider owl-carousel js-fullheight">
+    <div class="slider-item js-fullheight" style="background-image: url(./pic/1.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text js-fullheight justify-content-center align-items-center"
+          data-scrollax-parent="true">
+
+          <div class="col-md-12 col-sm-12 text-center ftco-animate">
+            <span class="subheading">Brother's Cafe</span>
+            <h1 class="mb-4">Best Cafe</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item js-fullheight" style="background-image: url(./pic/special-2.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text js-fullheight justify-content-center align-items-center"
+          data-scrollax-parent="true">
+
+          <div class="col-md-12 col-sm-12 text-center ftco-animate">
+            <span class="subheading">Brother's Cafe</span>
+            <h1 class="mb-4">Nutritious &amp; Tasty</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-item js-fullheight" style="background-image: url(./pic/5.jpg);">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+          <div class="col-md-12 col-sm-12 text-center ftco-animate">
+            <span class="subheading">Brother's Cafe</span>
+            <h1 class="mb-4">Delicious Specialties</h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section start -->
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="featured">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="featured-menus ftco-animate">
+                  <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
+                  <div class="text text-center">
+                    <h3>Chilli Paneer</h3>
+                    <p><span>Paneer</span>, <span>Onion</span>, <span>Green bell peppers</span>, <span>Ginger</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="featured-menus ftco-animate">
+                  <div class="menu-img img" style="background-image: url(images/breakfast-2.jpg);"></div>
+                  <div class="text text-center">
+                    <h3>Grilled Halloumi Salad</h3>
+                    <p><span>Grilled halloumi cheese</span>, <span>Fresh Veggies</span>, <span>Toasted pine nuts</span>,
+                      <span>Tomatoe</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="featured-menus ftco-animate">
+                  <div class="menu-img img" style="background-image: url(images/breakfast-3.jpg);"></div>
+                  <div class="text text-center">
+                    <h3>Chocolate Banana Oats</h3>
+                    <p><span>Basmati rice</span>, <span>Coconut cream</span>, <span>Dried fruits</span>, <span> Raw
+                        cacao</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="featured-menus ftco-animate">
+                  <div class="menu-img img" style="background-image: url(images/breakfast-4.jpg);"></div>
+                  <div class="text text-center">
+                    <h3>Poached Eggs</h3>
+                    <p><span>Eggs</span>, <span>Dark Chocolate</span>, <span>Grains </span>, <span>Carrots</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- about -->
+
+  <section class="ftco-section ftco-wrap-about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 d-flex">
+          <div class="img img-1 mr-md-2" style="background-image: url(./pic/11.jpg);"></div>
+          <div class="img img-2 ml-md-2" style="background-image: url(./pic/wallpaperflare.com_wallpaper.jpg);"></div>
+        </div>
+        <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate">
+          <div class="heading-section mb-4 my-5 my-md-0">
+            <span class="subheading">About</span>
+            <h2 class="mb-4">Brother's Cafe </h2>
+          </div>
+          <p>Our family at Brother's cafe has been providing the best coffee and food in the city sincein 2020.
+            His patented coffee beans are crafted to have the perfect ingredients, texture, and flavor and aslo
+            provide a good qulity food </p>
+          <pc class="time">
+            <span>Mon - Fri <strong>8 AM - 11 PM</strong></span>
+            <span><a href="#">+91 8264701370</a></span>
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section ftco-counter img ftco-no-pt" id="section-counter">
+    <div class="container">
+      <div class="row d-md-flex">
+        <div class="col-md-9">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="3">0</strong>
+                  <span>Years of Experienced</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="100">0</strong>
+                  <span>Menus/Dish</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="6">0</strong>
+                  <span>Staffs</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0 d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="15000">0</strong>
+                  <span>Happy Customers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 text-center text-md-left">
+          <p>Our family provide you a good services and feel like a home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- service -->
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+          <span class="subheading">Services</span>
+          <h2 class="mb-4">Catering Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+          <div class="media block-6 services d-block">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="fa fa-birthday-cake"></span>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Birthday Party</h3>
+              <p>We can host any parties for you or your loved ones! We provide the foods from donuts to birthday cakes.
+                We also can play music, provide games, and much more!</p>            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+          <div class="media block-6 services d-block">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="fa fa-users"></span>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Business Meetings</h3>
+              <p>We can organized Business Meetings for you. Here we provide a peace full place for Meetings.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-self-stretch ftco-animate text-center">
+          <div class="media block-6 services d-block">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span class="fa fa-cutlery"></span>
+            </div>
+            <div class="media-body p-2 mt-3">
+              <h3 class="heading">Wedding Party</h3>
+              <p>We can organized a Wedding party or marriage event. We can provide all type of food for your party.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- menu -->
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row no-gutters justify-content-center mb-5 pb-2">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+          <span class="subheading">Specialties</span>
+          <h2 class="mb-4">Our Menu</h2>
+        </div>
+      </div>
+      <div class="row no-gutters d-flex align-items-stretch">
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img" style="background-image: url(images/breakfast-1.jpg);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Chilli Paneer</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">120</span>
+                  </div>
+                </div>
+                <p><span>Paneer</span>, <span>Onion</span>, <span>Green bell peppers</span>, <span>Ginger</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img" style="background-image: url(images/breakfast-2.jpg);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Grilled Halloumi Salad</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">250</span>
+                  </div>
+                </div>
+                <p><span>Grilled halloumi cheese</span>, <span>Fresh Veggies</span>, <span>Toasted pine nuts</span>, <span>Tomatoe</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img order-md-last" style="background-image: url(images/breakfast-3.jpg);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Chocolate Banana Oats</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">320</span>
+                  </div>
+                </div>
+                <p><span>Basmati Rice</span>, <span>Coconut Cream</span>, <span>Dried fruits</span>, <span>Raw cacao</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img order-md-last" style="background-image: url(images/breakfast-5.jpg);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Grilled potatoes</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">180</span>
+                  </div>
+                </div>
+                <p><span>Meat</span>, <span>Potatoes</span>, <span>Potatoes</span>, <span>Tomatoe</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img" style="background-image: url(images/breakfast-6.jpg);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Grilled Beef with potatoes</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">160</span>
+                  </div>
+                </div>
+                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch">
+          <div class="menus d-sm-flex ftco-animate align-items-stretch">
+            <div class="menu-img img" style="background-image: url(./pic/hot-espresso.png);"></div>
+            <div class="text d-flex align-items-center">
+              <div>
+                <div class="d-flex">
+                  <div class="one-half">
+                    <h3>Hot Expresso</h3>
+                  </div>
+                  <div class="one-forth">
+                    <span class="price">90</span>
+                  </div>
+                </div>
+                <p><span>Grilled halloumi cheese</span>, <span>Fresh Veggies</span>, <span>Toasted pine nuts</span>, <span>Tomatoe</span></p>
+                <p><a href="./menu.html" class="btn btn-primary">Order now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-2">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+          <span class="subheading">Chef</span>
+          <h2 class="mb-4">Our Master Chef</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="staff">
+            <div class="img" style="background-image: url(pic/DSC_0166.JPG);"></div>
+            <div class="text pt-4">
+              <h3>Abdual Azeem</h3>
+              <span class="position mb-2">Restaurant Owner</span>
+              <div class="faded">
+                <ul class="ftco-social d-flex">
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="staff">
+            <div class="img" style="background-image: url(pic/DSC_0190.JPG);"></div>
+            <div class="text pt-4">
+              <h3>Asif</h3>
+              <span class="position mb-2">Head Chef</span>
+              <div class="faded">
+                <ul class="ftco-social d-flex">
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="staff">
+            <div class="img" style="background-image: url(pic/DSC_0272.JPG);"></div>
+            <div class="text pt-4">
+              <h3>Dilbag</h3>
+              <span class="position mb-2">Chef</span>
+              <div class="faded">
+                <ul class="ftco-social d-flex">
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="staff">
+            <div class="img" style="background-image: url(pic/DSC_0597.JPG);"></div>
+            <div class="text pt-4">
+              <h3>Deepak</h3>
+              <span class="position mb-2">Chef</span>
+              <div class="faded">
+                <ul class="ftco-social d-flex">
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section testimony-section img">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-12 text-center heading-section ftco-animate">
+          <span class="subheading">Testimony</span>
+          <h2 class="mb-4">Happy Customer</h2>
+        </div>
+      </div>
+      <div class="row ftco-animate justify-content-center">
+        <div class="col-md-12">
+          <div class="carousel-testimony owl-carousel ftco-owl">
+            <div class="item">
+              <div class="testimony-wrap text-center pb-5">
+                <div class="user-img mb-4" style="background-image: url(pic/DSC_0190.JPG)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="fa fa-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text p-3">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+                  <p class="name">Jason McClean</p>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap text-center pb-5">
+                <div class="user-img mb-4" style="background-image: url(pic/DSC_0272.JPG)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="fa fa-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text p-3">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+                  <p class="name">Mark Stevenson</p>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap text-center pb-5">
+                <div class="user-img mb-4" style="background-image: url(pic/c3.JPG)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="fa fa-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text p-3">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+                  <p class="name">Art Leonard</p>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap text-center pb-5">
+                <div class="user-img mb-4" style="background-image: url(pic/DSC_0597.JPG)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="fa fa-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text p-3">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+                  <p class="name">Rose Henderson</p>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testimony-wrap text-center pb-5">
+                <div class="user-img mb-4" style="background-image: url(pic/DSC_0166.JPG)">
+                  <span class="quote d-flex align-items-center justify-content-center">
+                    <i class="fa fa-quote-left"></i>
+                  </span>
+                </div>
+                <div class="text p-3">
+                  <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live the blind texts.</p>
+                  <p class="name">Ian Boner</p>
+                  <span class="position">Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-7 text-center heading-section ftco-animate">
+          <span class="subheading">Blog</span>
+          <h2 class="mb-4">Recent Posts</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry">
+            <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+            </a>
+            <div class="text pt-3 pb-4 px-4">
+              <div class="meta">
+                <!-- <div><a href="#">Sept. 06, 2022</a></div>
+                <div><a href="#">Admin</a></div> -->
+              </div>
+              <h3 class="heading"><a href="#">Taste the delicious foods in Ferozpur</a></h3>
+              <p class="clearfix">
+                <a href="#" class="float-left read">Read more</a>
+                <a href="#" class="float-right meta-chat"><span class="fa fa-commenting"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry">
+            <a href="blog-single.html" class="block-20" style="background-image: url('./pic/services-bg.jpg');">
+            </a>
+            <div class="text pt-3 pb-4 px-4">
+              <div class="meta">
+                <!-- <div><a href="#">Sept. 06, 2022</a></div>
+                <div><a href="#">Admin</a></div> -->
+              </div>
+              <h3 class="heading"><a href="#">Taste the delicious foods in Ferozput</a></h3>
+              <p class="clearfix">
+                <a href="#" class="float-left read">Read more</a>
+                <a href="#" class="float-right meta-chat"><span class="fa fa-commenting"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ftco-animate">
+          <div class="blog-entry">
+            <a href="blog-single.html" class="block-20" style="background-image: url('./pic/services.jpg');">
+            </a>
+            <div class="text pt-3 pb-4 px-4">
+              <div class="meta">
+                <!-- <div><a href="#">Sept. 06, 2022</a></div>
+                <div><a href="#">Admin</a></div> -->
+              </div>
+              <h3 class="heading"><a href="#">Taste the delicious foods in Ferozpur</a></h3>
+              <p class="clearfix">
+                <a href="#" class="float-left read">Read more</a>
+                <a href="#" class="float-right meta-chat"><span class="fa fa-commenting"></span> 3</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Brother's Cafe</h2>
+            <p>Our family at Brother's cafe has been providing the best coffee and food in the city sincein 2020. His
+              patented coffee beans are crafted to have the perfect ingredients, texture, and flavor and aslo provide a
+              good qulity food.</p>
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Open Hours</h2>
+            <ul class="list-unstyled open-hours">
+              <li class="d-flex"><span>Monday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Tuesday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Wednesday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Thursday</span><span>9:00 - 24:00</span></li>
+              <li class="d-flex"><span>Friday</span><span>9:00 - 02:00</span></li>
+              <li class="d-flex"><span>Saturday</span><span>9:00 - 02:00</span></li>
+              <li class="d-flex"><span>Sunday</span><span> 9:00 - 02:00</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Meet Developer</h2>
+            <p>Satnam Singh <span style="font-size: 12px;">(Jr. Software Developer)</span></p>
+            <div class="blog-entry">
+              <!-- <a href="blog-single.html" class="block-20" style="background-image: url('./pic/services.jpg');"> -->
+              <!-- <a href="#" class="block-20" style="background-image: url('./pic/services.jpg');">
+              </a> -->
+              <img  class="card-img" src="./pic/ss2.jpg" alt="">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p>
+            Copyright &copy 2023
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg></div>
+
+
+
+  <!--login model -->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"
+        style=" background : #c8a97e;; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"
+            style="text-align: center; font-weight: bold; color: white;">Sign in to Brother's Cafe</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="txtEmailLog form-control" id="inputEmail" aria-describedby="emailHelp"
+                style="background: none;">
+                <span class="validation-message"></span>
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="pswd mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="txtPswdLog pswd form-control" id="inputPassword"
+                style="background: none; color: red;">
+                <span class="validation-message"></span>
+            </div>
+            <input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal" value="Close">
+            <input type="button" class="btn btn-light rounded-3 " value="Login" id="btnLogin">
+            <!-- <input type="button" class="btn1 rounded-3 px-3 py-2 modal" value="Login" id="btnLogin">
+                  <input type="button" type="button" class="close btn1 rounded-3 px-3 py-2" data-bs-dismiss="modal"
+                    aria-label="Close" value="close"> -->
+            <p id="loginResult" style="text-align: center;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- signup model -->
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"
+        style=" background : #c8a97e; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"
+            style="text-align: center; font-weight: bold; color: white;">Register to Brother's Cafe</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/db-Signup" method="post">
+            <div class="mb-3">
+              <label for="txtEmail" class="form-label">Email</label>
+              <input type="email" name="txtEmail" class="txtEmailSign form-control" id="txtEmail"
+                aria-describedby="emailHelp" style="background: none;">
+              <p id="inputRes" style="font-size:14px; margin-left: 10px;"></p>
+            </div>
+            <div class="mb-3">
+              <label for="txtUsername" class="form-label">User Name</label>
+              <input type="email" name="txtEmail" class="txtUserSign form-control" id="txtUsername"
+                aria-describedby="emailHelp" style="background: none;" disabled>
+              <!-- <p id="inputRes" style="font-size:14px; margin-left: 10px;">*</p> -->
+            </div>
+            <div class="pswd mb-3">
+              <label for="txtPswd" class="form-label">Password</label>
+              <input type="password" name="txtPswd" class="txtPswdSign pswd form-control" id="txtPswd"
+                style="background: none;" >
+
+            </div>
+
+
+
+            <input type="button" class="btn btn-light rounded-3" value="Sign Up" id="btnSignup" disabled>
+            <input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal" aria-label="Close"
+              value="close">
+
+            <p class="mt-2 text-center" id="submitRes" style="margin-left: 10px;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--cardt model-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content" style=" background : #c8a97e;; border: none; box-shadow: 0px 0px 20px 0px rgb(244, 245, 246); color: #fcfcfc;">
+          <div class="modal-header text-light">
+              <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Add to Cart</h1>
+              <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              ...
+              <table>
+                  <thead>
+                      <tr style="margin-left: 20px;">
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                      </tr>
+                  </thead>
+                  <tbody id="cart-items">
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                          <td colspan="2">Total:</td>
+                          <td id="cart-total"></td>
+                      </tr>
+                  </tfoot>
+              </table>
+          </div>
+          <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-secondary rounded-3" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary rounded-3">Payment</button> -->
+    <input type="button" class="btn btn-light rounded-3" value="Payment" id="btnSignup">
+          <input type="button" class="btn btn-light rounded-3 me-2" data-bs-dismiss="modal" aria-label="Close"
+        value="close">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./js/scrollupbtn.js"></script>
+  <script src="js/dashbord.js"></script>
+  <script src="js/newcart.js"></script>
+</body>
+
+</html>
